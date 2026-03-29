@@ -2,7 +2,7 @@ const isJsonParsable = require('./index.js'); // Assuming your file is named ind
 
 const tests = [
   // --- Should be TRUE ---
-  { input: '{"name": "Gemini"}', expected: true, label: "Simple Object" },
+  { input: '{"name": "Bob"}', expected: true, label: "Simple Object" },
   { input: '[1, 2, 3]', expected: true, label: "Simple Array" },
   { input: '{"age": 11, "city": "Bengaluru"}', expected: true, label: "Object with numbers" },
   { input: '[]', expected: true, label: "Empty Array" },
