@@ -1,0 +1,24 @@
+{
+  "name": "is-json-parsable",
+  "version": "1.0.0",
+  "description": "A utility to check if the given JSON is parsable",
+  "license": "MIT",
+  "author": "oopsio",
+  "type": "commonjs",
+  "files": [
+    "dist/**",
+    "README.md",
+    "LICENSE"
+  ],
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "terser index.js -c -m -o dist/index.js --ecma 6 && node scripts/minify-dts.mjs",
+    "gzip-size": "node scripts/calculate-gzip.js"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "terser": "^5.46.1",
+    "dts-minify": "^0.3.3"
+  }
+}
