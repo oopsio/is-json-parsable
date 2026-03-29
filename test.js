@@ -1,4 +1,4 @@
-const isJsonParsable = require('./index.js'); // Assuming your file is named index.js
+const isJsonParsable = require('./dist/index.js');
 
 const tests = [
   // --- Should be TRUE ---
@@ -18,7 +18,7 @@ const tests = [
   { input: null, expected: false, label: "Null Value" }
 ];
 
-console.log("--- Starting Tests ---");
+console.log("Starting tests");
 
 let passed = 0;
 
@@ -32,5 +32,4 @@ tests.forEach(test => {
   }
 });
 
-console.log("-----------------------");
 console.log(`Results: ${passed}/${tests.length} tests passed.`);
